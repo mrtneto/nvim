@@ -47,6 +47,7 @@ return packer.startup(function(use)
   use 'savq/melange'
 
   use 'ryanoasis/vim-devicons'
+  use 'tpope/vim-commentary'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
