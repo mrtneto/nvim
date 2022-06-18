@@ -5,6 +5,5 @@ require "user.colorscheme"
 require "user.cmp"
 require "user.lsp"
 require "user.telescope"
-require "user.treesitter"
 
 vim.cmd [[ colorscheme melange ]]
