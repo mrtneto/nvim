@@ -46,9 +46,9 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use 'savq/melange'
 
-  use 'ryanoasis/vim-devicons'
   use 'tpope/vim-commentary'
   use 'jiangmiao/auto-pairs'
+  use 'lewis6991/gitsigns.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
