@@ -48,9 +48,10 @@ return packer.startup(function(use)
   use 'ayu-theme/ayu-vim'
 
   use 'tpope/vim-commentary'
+  use 'tpope/vim-eunuch'
   use 'jiangmiao/auto-pairs'
   use 'lewis6991/gitsigns.nvim'
-
+  use 'Vimjas/vim-python-pep8-indent'
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
