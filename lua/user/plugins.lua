@@ -4,8 +4,7 @@ local fn = vim.fn
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
   PACKER_BOOTSTRAP = fn.system {
-    "git",
-    "clone",
+    "git", "clone",
     "--depth",
     "1",
     "https://github.com/wbthomason/packer.nvim",
@@ -52,6 +51,8 @@ return packer.startup(function(use)
   use 'jiangmiao/auto-pairs'
   use 'lewis6991/gitsigns.nvim'
   use 'Vimjas/vim-python-pep8-indent'
+  -- use 'dariusmaverick/gi.vim'
+  
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -68,6 +69,8 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
+  -- development
+  use '/home/maverick/Desktop/projects/gi.vim/'
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
