@@ -51,7 +51,6 @@ return packer.startup(function(use)
   use 'jiangmiao/auto-pairs'
   use 'lewis6991/gitsigns.nvim'
   use 'Vimjas/vim-python-pep8-indent'
-  -- use 'dariusmaverick/gi.vim'
   
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -69,8 +68,6 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
-  -- development
-  use '/home/maverick/Desktop/projects/gi.vim/'
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
